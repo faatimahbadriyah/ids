@@ -1,0 +1,2 @@
+CREATE DATABASE IF NOT EXISTS ids_db;
+USE ids_db;
