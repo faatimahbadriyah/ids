@@ -1,0 +1,38 @@
+package com.ids.api.dto;
+
+public class ProductTransactionDTO {
+    private long id;
+    private String productId;
+    private String productName;
+    private int amount;
+    private String customerName;
+    private String status;
+    private String transactionDate;
+    private String createBy;
+    private String createOn;
+
+    public ProductTransactionDTO(long id, String productId, String productName, int amount,
+                                 String customerName, String status, String transactionDate,
+                                 String createBy, String createOn) {
+        this.id = id;
+        this.productId = productId;
+        this.productName = productName;
+        this.amount = amount;
+        this.customerName = customerName;
+        this.status = status;
+        this.transactionDate = transactionDate;
+        this.createBy = createBy;
+        this.createOn = createOn;
+    }
+
+    // Getters only
+    public long getId() { return id; }
+    public String getProductId() { return productId; }
+    public String getProductName() { return productName; }
+    public int getAmount() { return amount; }
+    public String getCustomerName() { return customerName; }
+    public String getStatus() { return status; }
+    public String getTransactionDate() { return transactionDate; }
+    public String getCreateBy() { return createBy; }
+    public String getCreateOn() { return createOn; }
+}
